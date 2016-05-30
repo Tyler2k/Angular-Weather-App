@@ -1,0 +1,35 @@
+<p>
+   <a href="#/"><input type="submit" href="#/" class="btn btn-success" value="Back to Search"/></a>
+</p>
+
+<h1>Forecast for {{ city }}</h1>
+
+
+<hr />
+<ul class="nav nav-pills">
+   <li role="presentation"><a href="#/forecast/2" ng-class="{'bg-primary': days === '2'}">2 Day</a></li>
+   <li role="presentation"><a href="#/forecast/5" ng-class="{'bg-primary': days === '5'}">5 Day</a></li>
+   <li role="presentation"><a href="#/forecast/12" ng-class="{'bg-primary': days === '12'}">Extended</a></li>
+</ul>
+<hr />
+
+<div class="row">
+   <div ng-repeat="weather in weatherResult.list">
+      <div class="col-md-2">
+         <div class="panel panel-primary">
+            <div class="panel-heading">
+               <h3 class="panel-title">{{ convertToDate(weather.dt) | date: "longDate" }}</h3>
+            </div>
+            <div class="panel-body">
+               <img class="img-thumbnail" ng-src="http://openweathermap.org/img/w/{{ weather.weather[0].icon }}.png" />
+               <div id="textbox">
+                  <br /><span>{{ titleCase(weather.weather[0].description) }}</span>
+                  <br /> Current: {{ weather.temp.day }}&deg
+                  <br /> Low of: {{ weather.temp.min }}&deg
+                  <br /> High of: {{ weather.temp.max }}&deg
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

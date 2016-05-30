@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:700italic,400);
+
+.img-thumbnail {
+   margin: 0 auto;
+   display: block;
+}
+
+.col-md-2 {
+   min-width: 190px;
+}
+
+#textbox, h1, h3, h4, a, input {
+   text-align: center;
+   font-family: Lora;
+}
+
+.btn-primary {
+   margin: auto;
+   display: block;  
+}
+
+#home {
+   margin-top: 20%;
+}
