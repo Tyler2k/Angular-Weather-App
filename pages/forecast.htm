@@ -21,7 +21,7 @@
                <h3 class="panel-title">{{ convertToDate(weather.dt) | date: "longDate" }}</h3>
             </div>
             <div class="panel-body">
-               <img class="img-thumbnail" ng-src="http://openweathermap.org/img/w/{{ weather.weather[0].icon | trusted}}.png" />
+               <img class="img-thumbnail" ng-src="http://openweathermap.org/img/w/{{ weather.weather[0].icon }}.png" />
                <div id="textbox">
                   <br /><span>{{ titleCase(weather.weather[0].description) }}</span>
                   <br /> Current: {{ weather.temp.day }}&deg

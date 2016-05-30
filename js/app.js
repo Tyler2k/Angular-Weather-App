@@ -72,11 +72,4 @@ weatherApp.controller("forecastController", ["$scope", "$resource", "$routeParam
     };
 }]);
 
-//FILTERS
-weatherApp.filter('trusted', ['$sce', function ($sce) {
-    return function(url) {
-        return $sce.trustAsResourceUrl(url);
-    };
-}]);
-
 
