@@ -11,14 +11,19 @@
 
 #textbox, h1, h3, h4, a, input {
    text-align: center;
-   font-family: Lora;
+   font-family: Lora, sans-serif;
 }
 
 .btn-primary {
    margin: auto;
-   display: block;  
+   display: block; 
 }
 
 #home {
    margin-top: 20%;
+}
+
+.panel.panel-primary {
+   
+      height: 220px;
 }

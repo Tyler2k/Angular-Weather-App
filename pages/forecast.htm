@@ -24,7 +24,6 @@
                <img class="img-thumbnail" ng-src="http://openweathermap.org/img/w/{{ weather.weather[0].icon }}.png" />
                <div id="textbox">
                   <br /><span>{{ titleCase(weather.weather[0].description) }}</span>
-                  <br /> Current: {{ weather.temp.day }}&deg
                   <br /> Low of: {{ weather.temp.min }}&deg
                   <br /> High of: {{ weather.temp.max }}&deg
                </div>
