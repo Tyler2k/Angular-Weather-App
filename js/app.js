@@ -72,6 +72,7 @@ weatherApp.controller("forecastController", ["$scope", "$resource", "$routeParam
         return desc; 
         
     };
+   
 }]);
 
 
